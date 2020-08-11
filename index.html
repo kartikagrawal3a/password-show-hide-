@@ -1,0 +1,64 @@
+ <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style type="text/css">
+		.div1{
+			max-width: 400px;
+			float : none; 
+			background-color: #dcdcdc;
+			border: 3px solid yellow;
+			margin-top: 150px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		body{
+			background-color: #000d1a;
+		}
+		input[type=button]{
+			width: 60px;
+			display: inline-block;
+			background-color: #000d1a;
+			color: white;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		input{
+			height: 30px;
+		}
+		td{
+			padding: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		function cls(){
+			if(document.f.txt2.value=="Show"){
+				document.f.txt1.type="text";
+				document.f.txt2.value="Hide";
+			}
+			else if(document.f.txt2.value=="Hide"){ 
+				document.f.txt1.type="Password";
+				document.f.txt2.value="Show";
+		}
+	}
+		function cls1(){
+			document.f.txt1.value="";
+			}
+	</script>
+</head>
+<body bgcolor="#000d1a">
+	<div class="div1">
+	<form name="f">
+		<h1 style="text-align: center; font-family: tahoma; color: #000d1a; margin-top: 10px;">Password</h1>
+		<center><table style="margin-top: 30px;">
+		<tr><td><label for="txt1">Enter Password</label></td><td><input type="Password" name="txt1" id="txt1" class="form-control"></td></tr>
+	</table></center><br><br>
+		<center><input type="button" name="txt2" value="Show" onclick="cls();" class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="Clear" onclick="cls1();" class="form-control"></center>
+
+
+	</form>
+</div>
+</body>
+</html>
